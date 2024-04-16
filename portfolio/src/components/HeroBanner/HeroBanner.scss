@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.heroBanner {
+    font-family: "Inter", sans-serif;
+    padding: 0rem;
+
+    .Intro {
+        z-index: 1;
+        height: 70vh;
+        background-color: rgb(16, 36, 53);
+        border-top: 1px solid rgb(16, 36, 53);
+        overflow: hidden;
+
+        h1 {
+            padding-top: 2rem;
+            color: white;
+            font-weight: 600;
+            letter-spacing: .1rem;
+            font-size: 2.5rem;
+            text-align: left;
+            margin: 1rem;
+        }
+
+        .profile{
+            display: flex;
+            flex-direction: row;
+            .about {
+                color: white;
+                height: 48vh;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                text-align: left;
+                padding: 0rem 3rem;
+                width: 45%;
+
+                .profile-details-role {
+                    margin-top: -8%;
+                    .primary-text h1 .steps{
+                        font-family: cursive;
+                        padding: 0rem;
+                        font-size: 3rem;
+                    }
+                }
+
+                h2 {
+                    font-size: 3rem;
+                    word-spacing: .1rem;
+                }
+
+                span {
+                    color: #ff5823;
+                }
+
+                p {
+                    color: white;
+                    font-size: 1.3rem;
+                }
+            }
+            .profileDesign{
+                img{
+                    width: 50%;
+                }
+                
+            }
+            
+        }
+
+        .borderImg {
+            img {
+                margin-top: 0.5%;
+            }
+
+            overflow: hidden;
+        }
+        
+    }
+
+    .Image {
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+
+        .profilePhoto {
+            margin-top: -8%;
+            width: 15%;
+            border-radius: 50%;
+            background-color: white;
+            z-index: 2;
+
+            img {
+                width: 100%;
+                z-index: 2;
+            }
+        }
+    }
+
+    .connectProfile {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 10px;
+        row-gap: 10px;
+        justify-content: space-around;
+        padding: 5rem 0rem;
+        align-items: center;
+
+        .cProfile {
+            width: 20%;
+            box-shadow: 1px 1px 30px 1px rgb(146, 147, 148, .5), -1px -1px 30px 1px rgb(146, 147, 148, .5);
+
+            .ProfileIcon {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                font-size: 1rem;
+
+                h3 {
+                    font-weight: 500;
+                    padding-left: 1rem;
+
+                    a {
+                        cursor: pointer;
+                        text-decoration: none;
+                        color: rgb(16, 36, 53);
+                    }
+                }
+            }
+
+            .ProfileIcon:hover {
+                text-decoration: underline;
+                font-size: 1.1rem;
+                transition: .5s all ease;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        .Intro {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .profile{
+                .about {
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .borderImg {
+                img {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .Image {
+            .profilePhoto {
+                margin-top: -12%;
+                width: 30%;
+            }
+        }
+
+        .connectProfile {
+            .cProfile {
+                width: 30%;
+
+                .ProfileIcon {
+                    font-size: 1em;
+                }
+
+                .ProfileIcon:hover {
+                    font-size: 1rem;
+                    transition: .5s all ease;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 800px) {
+        .Intro {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .profile{
+                .about {
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .borderImg {
+                img {
+                    margin-top: 2%;
+                }
+            }
+        }
+
+        .Image {
+            .profilePhoto {
+                margin-top: -14%;
+                width: 40%;
+            }
+        }
+
+        .connectProfile {
+            display: grid;
+            padding: 2rem 2rem;
+            grid-template-columns: auto auto;
+
+            .cProfile {
+                width: 100%;
+            }
+        }
+    }
+
+    @media screen and (max-width: 600px) {
+        .Intro {
+            min-height: 50vh;
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .profile{ 
+                .about {
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+
+                    p {
+                        font-size: 1.1rem;
+                    }
+                }
+            }
+
+            .borderImg {
+                img {
+                    margin-top: 3%;
+                }
+            }
+        }
+
+        .Image {
+            .profilePhoto {
+                width: 40%;
+            }
+        }
+
+        .connectProfile {
+            display: grid;
+            grid-template-columns: auto;
+            border: 1px solid black;
+            align-items: end;
+            row-gap: 20px;
+            justify-content: end;
+            padding-left: 5rem;
+
+            .cProfile {
+                border: 1px solid black;
+                width: 80%;
+            }
+        }
+    }
+}
