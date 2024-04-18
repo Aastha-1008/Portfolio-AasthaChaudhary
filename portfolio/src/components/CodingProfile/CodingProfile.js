@@ -10,6 +10,9 @@ const CodingProfile = () => {
     return (
         <div className="codingProfile">
             <h1>Coding Profile</h1>
+            <div className='divider'>
+                <hr/>
+            </div>
             <div className="profile">
                 <div className="profileContainer">
                     <div></div>

@@ -39,7 +39,7 @@ const HeroBanner = () => {
                         </div>
                     </div>
                     <div className='profileDesign' style={{ backgroundImage: `url(${design1})` }}>
-                        <img src={design2} />
+                        <img src={design2} alt="profile"/>
                     </div>
                 </div>
                 <div className='borderImg'>
@@ -51,6 +51,13 @@ const HeroBanner = () => {
                 <div className='profilePhoto'>
                     <img src={profileImage} alt="profile" />
                 </div>
+            </div>
+
+            <div className='profile-summary'>
+                <p>As a dynamic and motivated recent graduate, I bring a passion for both backend and frontend development, with a solid foundation in
+                    programming languages and a commitment to delivering innovative and user-centric solutions in the realm of web development. Eager
+                    to contribute my skills and learn from experienced teams to drive success in collaborative projects.
+                </p>
             </div>
 
             <div className="connectProfile">

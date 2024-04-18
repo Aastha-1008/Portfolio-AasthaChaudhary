@@ -1,0 +1,25 @@
+.sideNavbar{
+    padding: 5rem 1rem;
+    float: left;
+    .profileSections{
+        text-align: left;
+        .section{
+            border: 1px solid black;
+            padding: .1rem 1rem;
+            margin: 1rem;
+            font-family: 'Times New Roman', Times, serif;
+            border-radius: 10px;
+            h2{
+                color: black;
+                font-size: 1.5rem;
+            }
+        }
+        .active{
+            background-color: rgb(16, 36, 53);
+            .link h2{
+                font-size: 1.6rem;
+                color: white;
+            }
+        }
+    }
+}
