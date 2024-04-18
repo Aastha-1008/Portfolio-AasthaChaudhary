@@ -1,0 +1,43 @@
+.certificateSection{
+    float: left;
+    width: 70%;
+    padding: 2rem 1rem;
+    h1{
+        font-size: 3rem;
+    }
+    .divider{
+        height: .2rem;
+        width: 20%;
+        display: flex;
+        margin: -1rem auto 0rem auto;
+        background-color: #ff5283;
+        hr{
+            border: none;
+        }
+    }
+    .certificateName{
+        border: 1px solid black;
+        padding: 1rem;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        table{
+            border: 1px solid black;
+
+            th{
+                padding: 1rem 0rem;
+                font-size: 1.5rem;
+            }
+            td{
+                padding: 1rem 1rem;
+                font-size: 1.1rem;
+            }
+            .even{
+                background-color: gray;
+            }
+            .courseName{
+                width: 50%;
+            }
+        }
+    }
+}
